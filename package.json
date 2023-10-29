@@ -12,7 +12,7 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "TheBookShelf",
+  "name": "the-book-shelf",
   "packageManager": "npm@10.2.0",
   "workspaces": [
     "apps/*",
