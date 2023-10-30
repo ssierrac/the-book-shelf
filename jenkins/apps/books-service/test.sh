@@ -4,5 +4,5 @@
 echo 'The following "npm" command run test tests for books service app'
 set -x
 pwd
-cd app/books-service/
+cd apps/books-service/
 npm run test
