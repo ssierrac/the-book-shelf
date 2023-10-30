@@ -12,12 +12,18 @@ pipeline {
         sh 'npm install'
       }
     }
-    stage("Test") {
+    stage("Unit-Test") {
         steps {
             sh "chmod +x ./jenkins/apps/books-service/test.sh"
             sh './jenkins/apps/books-service/test.sh'
         }
     }
-
+    stage("E2E-Test") {
+        steps {
+            sh "cd"
+            sh "chmod +x ./jenkins/apps/books-service/e2e-test.sh"
+            sh './jenkins/apps/books-service/e2e-test.sh'
+        }
+    }
   }
 }
