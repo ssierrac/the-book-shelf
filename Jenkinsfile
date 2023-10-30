@@ -7,7 +7,7 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
+    stage('Init') {
       steps {
         sh 'npm install'
       }
