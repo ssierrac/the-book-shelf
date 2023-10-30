@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 
-echo "Looking where I am"
+
+echo 'The following "npm" command run test tests'
+set -x
 pwd

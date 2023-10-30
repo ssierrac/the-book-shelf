@@ -14,6 +14,7 @@ pipeline {
     }
     stage("Test") {
         steps {
+            sh "chmod +x ./jenkins/apps/books-service/test.sh"
             sh './jenkins/apps/books-service/test.sh'
         }
     }
