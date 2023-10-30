@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo 'The following "npm" command build the application'
 set -x
 pwd

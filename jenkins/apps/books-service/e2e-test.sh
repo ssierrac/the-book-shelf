@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo 'The following "npm" command run test end to end tests for books service app'
 set -x
 pwd
