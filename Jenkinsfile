@@ -36,8 +36,11 @@ pipeline {
       steps {
         sh "cd"
         sh "chmod +x ./jenkins/apps/books-service/deliver.sh"
+        sh "chmod +x ./jenkins/apps/books-service/kill.sh"
         sh './jenkins/apps/books-service/deliver.sh'
         input message: 'Finished using the web site? (Click "Proceed" to continue)'
+        sh "cd"
+        sh './jenkins/apps/books-service/kill.sh'
       }
     }
   }
